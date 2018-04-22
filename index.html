@@ -1,13 +1,14 @@
 ---
 layout: default
-title: "Ateliers"
+title: "Que faisons-nous ?"
 order: 1
 description: >
-  This is Phantom, a free, fully responsive site<br />
-  template designed by <a href="http://html5up.net" title="HTML5 UP">HTML5 UP</a>.
+  L'imaginaire et la créativité au service du travail social<br />
+  Des histoires et des ateliers pour relier, éveiller et renforcer
 ---
 <header>
-	<h1>{{ page.description }}</h1>
+  <h1>L'imaginaire et la créativité au service du travail social</h1>
+  <h3>Des histoires et des ateliers pour relier, éveiller et renforcer</h3>
 	<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
 </header>
 <section class="tiles">
@@ -19,9 +20,7 @@ description: >
         </span>
         <a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">
           <h2>{{ item.title }}</h2>
-          <div class="content">
-            <p>{{ item.description }}</p>
-          </div>
+          <p>{{ item.description }}</p>
         </a>
       </article>
     {% endfor %}
