@@ -3,24 +3,25 @@ layout: default
 title: "Que faisons-nous ?"
 order: 1
 description: >
-  L'imaginaire et la créativité au service du travail social<br />
-  Des histoires et des ateliers pour relier, éveiller et renforcer
+  Popot'art propose des histoires et des ateliers artistiques dans les institutions du secteur social et pédagogique (aide à la jeunesse, maisons d'accueil, crèches, écoles, etc.). Les animations sont présentées aux institutions en complément à leurs actions dans le but de développer du lien, stimuler l'éveil et renforcer l'estime de soi.
 ---
-<header>
-  <h1>L'imaginaire et la créativité au service du travail social</h1>
-  <h3>Des histoires et des ateliers pour relier, éveiller et renforcer</h3>
-	<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-</header>
+<div class="index">
+  <h3>L'imaginaire et la créativité au service du travail social</h3>
+  <h1>des histoires et des ateliers pour relier, éveiller et renforcer</h1>
+  <p><em>Popot'art</em> propose des histoires et des ateliers artistiques dans les institutions du secteur social et pédagogique (aide à la jeunesse, maisons d'accueil, crèches, écoles, etc.). Les animations sont présentées aux institutions en complément à leurs actions dans le but de développer du lien, stimuler l'éveil et renforcer l'estime de soi.</p>
+</div>  
 <section class="tiles">
-
-  {% for item in site.ateliers %}
+  {% assign ateliers = site.ateliers | sort: "order"  %}
+  {% for item in ateliers %}
       <article class="{{ item.class }}">
         <span class="image">
           <img src="{{ item.list-image | prepend: site.baseurl }}" alt="">
         </span>
         <a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
+          <div class="tilestext">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+        </div>
         </a>
       </article>
     {% endfor %}

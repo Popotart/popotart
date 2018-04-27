@@ -54,6 +54,9 @@
 						line-height: 1.5;
 						border: 0;
 						color: inherit;
+						&:hover {
+							color: #ee628a !important;
+						}
 					}
 
 					&:first-child {

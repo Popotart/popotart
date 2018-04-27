@@ -1,0 +1,47 @@
+.atelier{
+    $gutter: _size(gutter);
+    @include vendor('display', 'flex');
+	@include vendor('flex-wrap', 'wrap');
+    @include vendor('flex-direction', 'row');
+    
+    header{
+        width:100%;
+        margin-bottom: 1em;
+        h1, h4 {
+            margin:0;
+        }
+    }
+
+    .atelier_contenu {
+        width: calc(60% - #{$gutter});
+        margin-right: $gutter;
+    }
+
+    .atelier_galerie {
+        width: calc(39% - #{$gutter});
+        margin-left: $gutter;
+        @include vendor('display', 'flex');
+	    @include vendor('flex-wrap', 'wrap');
+        @include vendor('flex-direction', 'column');
+        
+        >img {
+            max-height: 100%;
+            max-width:100%;
+            margin-bottom: 1em;
+            border-radius: _size(border-radius);
+        }
+    }
+
+    @include breakpoint(small) {
+        .atelier_contenu {
+            width: 100%;
+            margin-right: 0;
+        }
+    
+        .atelier_galerie {
+            width: 100%;
+            margin-left: 0;
+        }
+
+    }
+}

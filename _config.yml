@@ -8,8 +8,7 @@
 # Site settings
 title: Popot'Art
 description: > # this means to ignore newlines until "baseurl:"
-  L'imaginaire et la créativité au service du travail social
-  Des histoires et des ateliers pour relier, éveiller et renforcer
+  Popot'art propose des histoires et des ateliers artistiques dans les institutions du secteur social et pédagogique (aide à la jeunesse, maisons d'accueil, crèches, écoles, etc.). Les animations sont présentées aux institutions en complément à leurs actions dans le but de développer du lien, stimuler l'éveil et renforcer l'estime de soi.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 lang: fr_FR
