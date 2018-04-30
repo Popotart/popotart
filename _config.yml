@@ -33,4 +33,7 @@ kramdown:
   input:      GFM
   auto_ids:   false
 
-exclude: ["README.md", "LICENSE.md", "screenshot.png"]
+exclude: ["README.md", "LICENSE.md", "screenshot.png", "non utilises"]
+
+# Google maps
+google_maps_javascript_api_key: " AIzaSyAVfCwuggjAGCu88yXZxjYdL4-sPybc6Y4 "

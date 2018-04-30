@@ -47,19 +47,21 @@
 						border-radius: _size(border-radius);
 						border: 0;
 						font-size: 0.8em;
-						font-weight: _font(weight-bold);
-						letter-spacing: _font(letter-spacing);
+						font-weight: _font(weight-bold);  
+					/*	letter-spacing: _font(letter-spacing);  */
 						text-transform: uppercase;
 					}
 
 					a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
-						text-indent: 4em;
-						font-size: 1em;
+				/*		text-indent: 4em;  */
+				/*		font-size: 1em;  */
 						overflow: hidden;
 						padding: 0;
+						text-align: center;
 						white-space: nowrap;
+						border : 1px solid _palette(border);
 
 						&:before, &:after {
 							@include vendor('transition', 'opacity #{_duration(transition)} ease');
@@ -74,7 +76,7 @@
 							background-repeat: no-repeat;
 							background-size: 2em 2em;
 						}
-
+/*
 						&:before {
 							background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><style>line { stroke-width: 8px; stroke: #{_palette(accent1)}; }</style><line x1="0" y1="25" x2="100" y2="25" /><line x1="0" y1="50" x2="100" y2="50" /><line x1="0" y1="75" x2="100" y2="75" /></svg>');
 							opacity: 0;
@@ -93,7 +95,7 @@
 							&:after {
 								opacity: 0;
 							}
-						}
+						}  */
 					}
 				}
 			}

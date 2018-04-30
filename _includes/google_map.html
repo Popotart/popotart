@@ -1,0 +1,41 @@
+<div id="map" style="width:100%;height:500px;"></div>
+<script>
+  window.mapData = {"latitude": 50.658965,"longitude": 4.572912, "zoom": 15};
+
+  function initMap() {
+    var myOptions = {
+      scrollwheel: true,
+      draggable: true,
+      panControl: false,
+      disableDefaultUI: true,
+      fullscreenControl: false,
+      zoomControl: true,
+      zoom: window.mapData.zoom,
+      center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles : [{"featureType":"all","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"color":"#afafaf"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"saturation":"25"},{"lightness":"46"},{"gamma":"1.26"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"hue":"#ff0000"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#b6edb6"},{"weight":"0.33"},{"lightness":"16"},{"saturation":"-17"}]},{"featureType":"poi.attraction","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#ede4e4"},{"saturation":"-63"},{"gamma":"0.38"},{"lightness":"61"}]},{"featureType":"poi.medical","elementType":"geometry.fill","stylers":[{"color":"#f4b4b4"},{"saturation":"-16"},{"lightness":"20"}]},{"featureType":"poi.medical","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.school","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#fbc99b"},{"lightness":"12"},{"gamma":"2.39"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"color":"#fdcb9b"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#f2af67"},{"lightness":"47"},{"saturation":"64"},{"gamma":"0.95"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"saturation":"-18"},{"lightness":"61"},{"gamma":"7.93"},{"weight":"0.30"},{"color":"#db8828"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"weight":"0.79"},{"gamma":"3.19"},{"lightness":"-73"},{"saturation":"-76"},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"invert_lightness":true},{"weight":"2.90"},{"color":"#786e6e"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"},{"color":"#5da554"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#7fd4ef"},{"saturation":"13"},{"lightness":"-3"},{"gamma":"1.13"},{"weight":"0.30"}]}]
+    }; 
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+      title: "popot'Art",
+      icon: {
+      path: 'M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z',
+      fillColor: "#f06b0c",
+      fillOpacity: 1,
+      scale: 0.1,
+      anchor: new google.maps.Point(185, 520)
+
+    }
+    });
+
+    google.maps.event.addDomListener(window, 'resize', function() {
+      map.setCenter(myOptions.center);
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+
