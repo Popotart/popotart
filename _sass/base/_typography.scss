@@ -11,7 +11,7 @@
 		font-family: _font(family);
 		font-size: 16pt;
 		font-weight: _font(weight);
-		line-height: 1.75;
+		line-height: 1.7;
 
 		@include breakpoint(xlarge) {
 			font-size: 14pt;
@@ -42,8 +42,25 @@
 		font-weight: _font(weight-bold);
 	}
 
-	em, i {
-		font-style: italic;
+	em {
+		/*font-style: italic; */
+		color :darken( _palette(accent3), 10%);
+		font-weight: _font(weight-bold-alt); 
+	}
+
+	i {
+		color :darken( _palette(accent3), 10%);
+		font-weight: normal; 
+		font-size: 1.3em;
+		display:inline-block;
+		width : 1.8em;
+		vertical-align: top;
+		text-align: center;
+		margin-right:.1em;
+	}
+	
+	i + span {
+		display:inline-block;
 	}
 
 	p {
