@@ -44,12 +44,12 @@
 
 	em {
 		/*font-style: italic; */
-		color :darken( _palette(accent3), 10%);
+		/*color :darken( _palette(accent3), 10%); */
 		font-weight: _font(weight-bold-alt); 
 	}
 
 	i {
-		color :darken( _palette(accent3), 10%);
+		color :darken( _palette(accent2), 5%);
 		font-weight: normal; 
 		font-size: 1.3em;
 		display:inline-block;
@@ -91,6 +91,7 @@
 
 	h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
+		color: darken( _palette(accent2), 10%);
 		font-weight: _font(weight-bold);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 1) 0;
