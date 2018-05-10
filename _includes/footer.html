@@ -1,27 +1,28 @@
 <!-- Footer -->
-          <footer id="footer">
-            <div class="inner">
-              <section>
-                
-                {% include contact_info.html %}
-              </section>
-              <section>
-                  <i class="icon fa-sitemap"> </i>
-                  <nav>
-                      
-                      <ul>
-                        {% assign pages = site.pages | sort: "order"  %}
-                        {% for my_page in pages %}
-                          {% if my_page.title %}
-                          <li><a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a></li>
-                          {% endif %}
-                        {% endfor %}
-                      </ul>
-                    </nav>
-              </section>
-              <ul class="copyright">
-                <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net" title="HTML5 UP" target="_blank">HTML5 UP</a></li>
-                <li>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
-              </ul>
-            </div>
-          </footer>
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <img src="{{ " /assets/images/popotartLogo.svg " | prepend: site.baseurl }}" alt="Logo {{ site.title }}" class="logo-footer">
+    </section>
+    <section>
+      {% include contact_info.html %}
+    </section>
+
+    <section>
+      <i class="icon fa-bars"> </i>
+
+      <nav>
+        {% include menu.html %}
+      </nav>
+    </section>
+    <ul class="copyright">
+      <li>&copy; Untitled. All rights reserved</li>
+      <li>Design:
+        <a href="http://html5up.net" title="HTML5 UP" target="_blank">HTML5 UP</a>
+      </li>
+      <li>subscribe
+        <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a>
+      </li>
+    </ul>
+  </div>
+</footer>

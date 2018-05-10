@@ -10,6 +10,7 @@
 		&.special {
 			text-align: center;
 		}
+		
 	}
 
 	header {
@@ -22,4 +23,95 @@
 				margin-top: 0;
 			}
 		}
+	}
+
+	section  {
+		&.content-section {
+			$gutter: _size(gutter);
+			@include vendor('display', 'flex');
+	    	@include vendor('flex-wrap', 'no-wrap');
+			@include vendor('flex-direction', 'row');
+			margin-top: _size(element-margin) * 2;
+			padding : 1rem;
+			border-radius: _size(border-radius);
+
+			.section-image {
+				border-radius: _size(border-radius);
+				border: 0;		
+				img {
+					border-radius: _size(border-radius);
+					display: block;
+				}
+			}	
+		
+			&.intervenants {
+				background-color: lighten(_palette(accent6), 10%);
+				.section-image {
+					height:500px;
+					order: 1;
+					align-self: center;
+					margin-left: $gutter;
+					img {
+						height: 100%;
+					}
+				}
+			}
+
+			&.missions {
+					background: linear-gradient(
+					rgba(255, 255, 255, 0.45), 
+					rgba(255, 255, 255, 0.45)),url('../images/mains.jpg') ;
+
+					background-repeat:no-repeat;
+					background-position:center center;
+					background-size: cover;
+					
+					> .text {
+						background: rgba(white, 0.7);
+						border-radius: _size(border-radius);
+						width:100%;
+						margin: 1em;
+						padding: 1em;					
+					}
+
+					@include breakpoint(medium) {
+						> .text{
+								margin: 0;
+								padding: 0.3em;
+						}						
+					}	
+
+					h2 {
+						text-align: center;
+					}
+				
+				 
+			}
+
+			&.pourqui {
+				background: linear-gradient(
+					rgba(255, 255, 255, 0.4), 
+					rgba(255, 255, 255, 0.4)),url('../images/maisons.jpg') ;
+
+					background-repeat: no-repeat;
+					background-position:left center;
+					background-size: 500px auto;
+					
+					> .text {
+						background: rgba(lighten(_palette(accent2), 35%), 0.85);
+						border-radius: _size(border-radius);
+						margin-left: 300px;
+						padding: 1em;	
+						
+						h2{
+							text-align:center;
+						}
+					}
+				}
+				
+					
+			
+			
+		}
+		
 	}

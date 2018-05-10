@@ -1,17 +1,17 @@
 ---
-layout: page
 title: "Nos valeurs"
-order: 4
-permalink: /valeurs/
+order: 2
+name: "valeurs"
+permalink: /apropos.html#valeurs
 
 header-image: "/assets/images/pic13.jpg"
 alt-image: "image description generic b"
 ---
 
 *Popot'art* est née de la conviction que **les arts** sont essentiels à notre société et contribuent à :
-* mieux vivre ensemble, 
+* mieux **vivre ensemble**, 
 * **mieux grandir**, 
-* mieux s'épanouir et trouver sa place. 
+* mieux **s'épanouir** et trouver sa place. 
 
 Ils permettent d'envisager de nouveaux possibles, d'**ouvrir des portes** parfois bien fermées, d'habiter autrement le présent et d'être pleinement soi-même.
 

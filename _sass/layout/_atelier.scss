@@ -1,28 +1,37 @@
 .atelier{
     $gutter: _size(gutter);
     @include vendor('display', 'flex');
-	@include vendor('flex-wrap', 'wrap');
-    @include vendor('flex-direction', 'row');
+	    @include vendor('flex-wrap', 'wrap');
+        @include vendor('flex-direction', 'row');
     
     header{
-        width:100%;
+        width: 100%;
         margin-bottom: _size(element-margin);
         h1, h4 {
             margin:0;
         }
+        
     }
 
-    .atelier_contenu {
+    .atelier_text{
         width: calc(60% - #{$gutter});
-        margin-right: $gutter;
+        margin-right: $gutter;   
+
+        .ateliers_exemples{
+            margin-top: $gutter;
+            padding-left: 1em;
+            border-left: 5px solid lighten(_palette(accent2), 25%);
+        }
+
+        .atelier_liens{
+            margin-top: $gutter;
+        }
+            
     }
 
     .atelier_galerie {
         width: calc(39% - #{$gutter});
         margin-left: $gutter;
-        @include vendor('display', 'flex');
-	    @include vendor('flex-wrap', 'wrap');
-        @include vendor('flex-direction', 'column');
         
         >img {
             max-height: 100%;
@@ -32,8 +41,9 @@
         }
     }
 
-    @include breakpoint(small) {
-        .atelier_contenu {
+
+    @include breakpoint(medium) {
+        .atelier_text  {
             width: 100%;
             margin-right: 0;
         }
@@ -41,6 +51,18 @@
         .atelier_galerie {
             width: 100%;
             margin-left: 0;
+        }
+
+        .atelier_galerie {
+            align-content: center;
+            >img {
+                max-width:500px;
+                width:100%;
+            }
+        }
+
+        .ateliers_exemples {
+            order: 0;
         }
 
     }

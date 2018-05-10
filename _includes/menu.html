@@ -1,0 +1,29 @@
+<ul>
+    {% assign pages = site.pages | sort: "order"  %}
+    {% for my_page in pages %}
+        {% if my_page.title %}
+        <li>
+            <a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a>
+        {% endif %}
+    
+        {% if my_page.inner-content %}
+        {% assign inner-content = my_page.inner-content  %}
+            {% case inner-content %}
+            {% when 'interventions' %}
+                <ul>
+                    <li><a href="index.html#interventions" title="nos interventions">Nos interventions</a></li>
+                </ul>
+            {% when 'sections' %}
+                <ul>
+                {% assign sections = site.sections | sort: "order"  %}
+                {% for my_section in sections %}
+                    {% if my_section.title %}
+                        <li><a href="{{ my_section.url | prepend: site.baseurl }}" title="{{ my_section.title }}">{{ my_section.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endcase %}
+        {% endif %}
+        </li>
+    {% endfor %}
+</ul>

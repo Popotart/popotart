@@ -24,9 +24,11 @@ include: ['_pages']
 collections:
   ateliers:
     output: true 
+  sections:  
     
 sass:
   sass_dir: _sass
+  style: compressed
 markdowm: kramdown
 
 kramdown:

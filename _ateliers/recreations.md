@@ -4,23 +4,23 @@ title:        "Ré-créations"
 
 # POSTS LIST
 order: 4
-class:       "style4"                         # config bg-color to post list card (1..6)
-list-image:  "/assets/images/recreations.jpeg"       # config image to post list card (1..6)
+class:       "style2"                         # config bg-color to post list card (1..6)
+list-image:  "/assets/images/recreations2.jpeg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
-  Espaces créatifs de parole pour enfants et adultes
+  Espaces créatifs de parole <br> pour enfants et adultes
 
 # GALERIE
 images:
-  - image_path: /assets/images/galeries/recreationsLivres.jpg
+  - image_path: /assets/images/galeries/recreationsImages.jpg
     title: images réalisées en collages suspendues à un fil
-  - image_path: /assets/images/galeries/recreationsCreatrices.jpg
+  - image_path: /assets/images/galeries/recreationsMessages.jpg
+    title: personnes écrivant sur des feuilles sur un mur
+  - image_path: /assets/images/galeries/recreationsCahiers.jpg
     title: personnes en train de dessiner dans des carnets
   - image_path: /assets/images/galeries/recreationsTiroirs.jpg
     title: Petit meuble à tiroirs contenant des mots sur des papiers
-  - image_path: /assets/images/galeries/recreationsTerre.jpg
-    title: divers objets réalisés en terre glaise
-  - image_path: /assets/images/galeries/recreationsCartes.jpg
-    title: personne qui joue avec des cartes 
+
+
 ---
 *Popot'art* anime des groupes de parole basés sur un atelier créatif et se référant aux
 ressources et aux expériences des participants.

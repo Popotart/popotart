@@ -1,0 +1,12 @@
+<section id="{{ section.name }}" class="content-section {{ section.name }}">
+    {% if section.image %}
+    <span class="section-image">
+        <img src="{{ section.image | prepend: site.baseurl }}" alt="{{ section.alt-image }}">
+    </span>
+    {% endif %}
+    <div class="text">
+        <h2>{{ section.title }}</h2>
+        {{ section.content }}
+
+    </div>
+</section>

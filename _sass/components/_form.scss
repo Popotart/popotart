@@ -82,6 +82,7 @@
 		background-color: transparent;
 		border: none;*/
 		background-color: _palette(bg-alt);
+		background-color: lighten(_palette(accent2), 40%);
 		border-radius: _size(border-radius);
 		border: solid _size(border-width) _palette(border);
 		color: inherit;

@@ -41,6 +41,7 @@
 
 			> h2{
 				color:  _palette(accent2) ;
+				margin-top: 0;
 			}
 
 			> ul {
@@ -51,6 +52,19 @@
 				> li {
 					padding: 0;
 					border-top: solid 1px transparentize(_palette(bg), 0.85);
+					font-weight: _font(weight-bold-alt);
+						
+					ul {
+						list-style-type: none;
+						margin-bottom:0;
+
+						li{
+							border-top: solid 1px transparentize(_palette(bg), 0.85);
+							a {
+								font-weight: _font(weight);
+							}
+						}
+					}	
 
 					a {
 						display: block;
@@ -61,6 +75,8 @@
 						&:hover {
 							color: lighten( _palette(accent1), 5%) !important;
 						}
+
+					 
 					}
 
 					&:first-child {

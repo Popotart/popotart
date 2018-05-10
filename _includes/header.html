@@ -3,16 +3,18 @@
   <div class="inner">
 
     <!-- Logo -->
-      <a href="{{ site.baseurl }}/" class="logo" title="{{ site.title }}">
-        <img src="{{ "/assets/images/popotartLogo.svg" | prepend: site.baseurl }}" alt="Logo {{ site.title }}">
-      </a>
+    <a href="{{ site.baseurl }}/" class="logo" title="{{ site.title }}">
+      <img src="{{ " /assets/images/popotartLogo.svg " | prepend: site.baseurl }}" alt="Logo {{ site.title }}">
+    </a>
 
     <!-- Nav -->
-      <nav>       
-        <ul>
-          <li><a href="#menu" title="Menu">Menu</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="#menu" title="Menu">Menu</a>
+        </li>
+      </ul>
+    </nav>
 
   </div>
 </header>
@@ -20,12 +22,6 @@
 <!-- Menu -->
 <nav id="menu">
   <h2>Menu</h2>
-  <ul>
-    {% assign pages = site.pages | sort: "order"  %}
-    {% for my_page in pages %}
-      {% if my_page.title %}
-      <li><a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+  {% include menu.html %}
+
 </nav>

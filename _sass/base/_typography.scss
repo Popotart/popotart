@@ -45,6 +45,7 @@
 	em {
 		/*font-style: italic; */
 		/*color :darken( _palette(accent3), 10%); */
+		color: darken( _palette(accent2), 10%);
 		font-weight: _font(weight-bold-alt); 
 	}
 
@@ -53,7 +54,7 @@
 		font-weight: normal; 
 		font-size: 1.3em;
 		display:inline-block;
-		width : 1.8em;
+		width : 2.3rem;
 		vertical-align: top;
 		text-align: center;
 		margin-right:.1em;
@@ -64,12 +65,13 @@
 	}
 
 	p {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
 
 	h1 {
 		font-size: 2.75em;
 		color: _palette(fg-bold);
+		color:  _palette(accent4);
 		font-weight: _font(weight-bold-alt);
 		line-height: 1.3;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -84,17 +86,13 @@
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 		}
 
-		@include breakpoint(xxsmall) {
-			font-size: 1.75em;
-		}
 	}
 
-	h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+	h3, h4, h5, h6 {
 		color: darken( _palette(accent2), 10%);
 		font-weight: _font(weight-bold);
 		line-height: 1.5;
-		margin: 0 0 (_size(element-margin) * 1) 0;
+		margin: (_size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
 		letter-spacing: _font(letter-spacing);
 
@@ -104,7 +102,11 @@
 	}
 
 	h2 {
-		font-size: 1.1em;
+		font-weight: _font(weight-bold);
+		line-height: 1.5;
+		margin: (_size(element-margin) * 0.5) 0;
+		font-size: 2em;
+		
 	}
 
 	h3 {
@@ -133,7 +135,7 @@
 
 	@include breakpoint(small) {
 		h2 {
-			font-size: 1em;
+			font-size: 1.3em;
 		}
 
 		h3 {

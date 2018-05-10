@@ -7,28 +7,50 @@
 /* Footer */
 
 	#footer {
-		
+
+		/** {
+			background-color: rgba(255, 0, 0, 0.144);
+		}
+		*/
 		$gutter: _size(gutter);
 
-		@include padding(5em, 0, (0, 0, 3em, 0));
+		@include padding(3em, 0, (0, 0, 3em, 0));
 		background-color: _palette(bg-alt);
 
 		> .inner {
 			@include vendor('display', 'flex');
-			@include vendor('flex-wrap', 'wrap');
+			@include vendor('flex-wrap', 'wrap');			
 			@include vendor('flex-direction', 'row');
+
+			.logo-footer{
+				height: 2.5em;
+			}
+
+			i h3 {
+				font-size: .8rem;
+				letter-spacing: 0;
+				
+			}
 
 			> * > :last-child {
 				margin-bottom: 0;
 			}
 
 			section:nth-child(1) {
-				width: calc(50% - #{$gutter});
+				width: calc(20% - #{$gutter});
 				margin-right: $gutter;
+
+			
 			}
 
 			section:nth-child(2) {
-				width: calc(50% - #{$gutter});
+				width: calc(40% - #{$gutter});
+				
+				margin-left: $gutter;
+			}
+
+			section:nth-child(3) {
+				width: calc(40% - #{$gutter});
 				margin-left: $gutter;
 			}
 			nav {
@@ -36,12 +58,20 @@
 				ul {
 					list-style-type: none;
 					padding-left:0;
+					margin-bottom: 0;
 					li {
 						padding-left:0;
 						a {
-							font-weight: bold;
+							font-weight: _font(weight-bold);
 							text-decoration: none;
 							border-bottom:0;
+						}
+						ul{
+							padding-left: 1.5em;
+							li a {
+								font-weight: _font(weight-bold-alt);
+							}
+							
 						}
 					}
 				}
@@ -74,7 +104,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		/*@include breakpoint(large) {
 			$gutter: _size(gutter) * 0.5;
 
 			@include padding(5em, 0);
@@ -90,18 +120,25 @@
 					margin-left: $gutter;
 				}
 			}
-		}
+		}*/
 
 		@include breakpoint(medium) {
 			$gutter: _size(gutter);
 
 			> .inner {
 				section:nth-child(1) {
-					width: 50%;
-					margin-right: 0;
+					width: 100%;
+					margin: 0 0 2em 1em ;
+					
 				}
 
 				section:nth-child(2) {
+					width: 50%;
+					margin-left: 0;
+					margin-right: 0;
+				}
+
+				section:nth-child(3) {
 					width: calc(50% - #{$gutter});
 					margin-left: $gutter;
 				}
@@ -115,15 +152,22 @@
 				@include vendor('flex-direction', 'column');
 
 				section:nth-child(1) {
+					@include vendor('order', '-1');
 					width: 100%;
 					margin-right: 0;
 					margin: 3em 0 0 0;
 				}
 
 				section:nth-child(2) {
+					width: 100%;
+					margin-left: 0;
+				}
+
+				section:nth-child(3) {
 					@include vendor('order', '-1');
 					width: 100%;
 					margin-left: 0;
+					margin: 3em 0;
 				}
 
 				.copyright {

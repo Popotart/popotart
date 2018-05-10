@@ -11,12 +11,15 @@ description: >                                # config description to post list 
 
 # GALERIE
 images:
+  - image_path: /assets/images/galeries/parentsEnfantsCadres.jpg
+    title: Petits cadres
+  - image_path: /assets/images/galeries/parentsEnfantsFeuilles.jpg
+    title: Personnes assises avec matériel naturel
   - image_path: /assets/images/galeries/parentsEnfantsMateriel.jpg
     title: Materiel pour ateliers parents-enfants
   - image_path: /assets/images/galeries/parentsEnfantsSouffle.jpg
     title: Petite fille et son papa soufflant sur un moulin en papier
-  - image_path: /assets/images/galeries/parentsEnfantsLivre.jpg
-    title: Petit livre réalisé par l'enfant
+
 
 # EXEMPLES
 categorieExemples: ateliers

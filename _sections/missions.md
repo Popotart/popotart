@@ -1,10 +1,11 @@
 ---
-layout: page
 title: "Nos missions"
-order: 2
-permalink: /missions/
+order: 1
+name: "missions"
+permalink: /apropos.html#missions
 
-header-image: "/assets/images/pic13.jpg"
+
+imagename: "/assets/images/pic13.jpg"
 alt-image: "image description generic b"
 ---
 

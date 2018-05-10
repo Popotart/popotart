@@ -1,0 +1,24 @@
+---
+layout: default
+title: "A propos"
+permalink: /apropos.html
+order: 2
+inner-content: sections
+description: >
+  A propos de Popot'art
+  
+--- 
+
+
+  <h1>A propos</h1>
+
+
+
+{% assign sections = site.sections | sort: 'order' %}
+{% for section in sections %}
+    {% include section.html %}
+{% endfor %}
+  
+ 
+
+

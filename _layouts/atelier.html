@@ -6,21 +6,35 @@ layout: default
     <h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
   </header>
-  <div class="atelier_contenu">
-    {{ content }}
-    {% if page.exemples %}
+
+  <div class="atelier_text">
+    <div class="atelier_contenu">
+    {{ content }}   
+   </div>   
+
+  {% if page.exemples %}
     <div class="ateliers_exemples">
-      <h2>Quelques exemples d'{{ page.categorieExemples }}</h2>
+      <h3>Quelques exemples d'{{ page.categorieExemples }}</h3>
       {% for exemple in page.exemples %}
         <p><strong>{{ exemple.title }}</strong><br>{{ exemple.descriptif }}</p>
       {% endfor %}  
     </div>
     {% endif %}
+
+    <div class="atelier_liens">
+      <p>Nos animations s’adaptent aux objectifs de votre institution. N’hésitez donc pas à 
+          <a href="/contact.html">nous en parler !</a></p>
+      <p>        Vous souhaitez en savoir plus sur les <a href="/index.html">autres interventions</a> de Popot’art ? 
+      </p>    
+    </div>
+
   </div>
-  
+
   <div class="atelier_galerie">
-          {% for image in page.images %}
+    {% for image in page.images %}
             <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
-          {% endfor %}     
+          {% endfor %} 
   </div>
+ 
+  
 </article>

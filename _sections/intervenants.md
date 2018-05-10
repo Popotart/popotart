@@ -1,11 +1,14 @@
 ---
-layout: page
 title: "Nos intervenants"
-order: 5
-permalink: /intervenants/
+# Set the display order for this section
+order: 4
+name: "intervenants"
+permalink: /apropos.html#intervenants
 
-header-image: "/assets/images/pic13.jpg"
-alt-image: "image description generic b"
+image: /assets/images/pernelle.jpg
+alt-image: "Pernelle Taquet, intervenante de popot'Art"
+
+
 ---
 
 *Popot'art* s'appuie actuellement sur une intervenante, Pernelle Taquet.
@@ -16,4 +19,4 @@ Sensible à la **pluralité des langages** et des modes de fonctionnement, elle 
 
 Notre intervenante aime **raconter**. Elle aime jouer et **créer**. Elle aime faire connaître et partager des univers, proposer une expérience accessible à tous dans laquelle chacun peut intervenir à sa façon, offrir un espace-temps hors des conventions où toute intervention se vaut, où chacun peut être, où chacun peut faire.
 
-Elle a suivi plusieurs formations dans le champs du travail social : autour de la santé mentale, la communication non violente et l'exil. Elle s'est formée également dans le secteur artistique : théâtre, clown, conte et littérature jeunesse.
+Historienne de formation, elle a suivi plusieurs formations dans le champs du travail social : autour de la santé mentale, la communication non violente et l'exil. Elle s'est formée également dans le secteur artistique : théâtre, clown, conte et littérature jeunesse.
