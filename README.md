@@ -5,11 +5,10 @@ The content of this site is protected by copyright. Do not use the images, logo 
 
 #### Credits:
 
-### Template Phantom by: HTML5 UP converted to Jekyll Theme
-[Demo](http://bcasal.github.io/Phantom-Jekyll-Theme/)
+* **Template Phantom by: HTML5 UP converted to Jekyll Theme by Bcasal:**
+  * [Demo](http://bcasal.github.io/Phantom-Jekyll-Theme/)
 
-### Phantom by [HTML5 UP](http://html5up.net/) | @n33co
-
+* **Phantom by [HTML5 UP](http://html5up.net/) | @n33co**
 
 * **Icons:**
   * Font Awesome (fortawesome.github.com/Font-Awesome)
