@@ -2,7 +2,9 @@
 <footer id="footer">
   <div class="inner">
     <section>
-      <img src="{{ " /assets/images/popotartLogo.svg " | prepend: site.baseurl }}" alt="Logo {{ site.title }}" class="logo-footer">
+        <a href="{{ site.baseurl }}/" class="logo" title="{{ site.title }}">
+          <img src="{{ " /assets/images/popotartLogo.svg " | prepend: site.baseurl }}"  class="logo-footer">
+        </a>
     </section>
     <section>
       {% include contact_info.html %}
@@ -16,12 +18,9 @@
       </nav>
     </section>
     <ul class="copyright">
-      <li>&copy; Untitled. All rights reserved</li>
-      <li>Design:
-        <a href="http://html5up.net" title="HTML5 UP" target="_blank">HTML5 UP</a>
-      </li>
-      <li>subscribe
-        <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a>
+      <li>&copy; Popot'art asbl</li>
+      <li>
+        <a href="{{ site.baseurl }}/mentions.html" title="Mentions légales">Mentions légales</a>
       </li>
     </ul>
   </div>

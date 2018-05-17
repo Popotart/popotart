@@ -18,9 +18,6 @@
 	/// Properties that should be vendorized.
 	/// @var {list}
 	$vendor-properties: (
-		'align-content',
-		'align-items',
-		'align-self',
 		'animation',
 		'animation-delay',
 		'animation-direction',
@@ -34,34 +31,19 @@
 		'backface-visibility',
 		'box-sizing',
 		'filter',
-		'flex',
-		'flex-basis',
-		'flex-direction',
-		'flex-flow',
-		'flex-grow',
-		'flex-shrink',
-		'flex-wrap',
 		'justify-content',
 		'order',
 		'perspective',
 		'pointer-events',
 		'transform',
 		'transform-origin',
-		'transform-style',
-		'transition',
-		'transition-delay',
-		'transition-duration',
-		'transition-property',
-		'transition-timing-function'
+		'transform-style'
 	);
 
 	/// Values that should be vendorized.
 	/// @var {list}
 	$vendor-values: (
 		'filter',
-		'flex',
-		'linear-gradient',
-		'radial-gradient',
 		'transform'
 	);
 

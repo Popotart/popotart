@@ -19,8 +19,6 @@ images:
     title: Petite fille qui peint
   - image_path: /assets/images/galeries/ateliersOiseau.jpg
     title: Carte avec un oiseau dessiné
-  - image_path: /assets/images/galeries/ateliersTerre.jpg
-    title: Mains qui travaillent la terre 
   - image_path: /assets/images/galeries/ateliersMateriel.jpg
     title: Materiel créatif  
 

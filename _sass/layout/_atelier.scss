@@ -1,8 +1,8 @@
 .atelier{
     $gutter: _size(gutter);
     @include vendor('display', 'flex');
-	    @include vendor('flex-wrap', 'wrap');
-        @include vendor('flex-direction', 'row');
+	@include vendor('flex-wrap', 'wrap');
+    @include vendor('flex-direction', 'row');
     
     header{
         width: 100%;
@@ -21,6 +21,10 @@
             margin-top: $gutter;
             padding-left: 1em;
             border-left: 5px solid lighten(_palette(accent2), 25%);
+
+            >h3 {
+                color:  _palette(accent5);
+            }
         }
 
         .atelier_liens{

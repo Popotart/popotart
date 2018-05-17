@@ -36,23 +36,36 @@
 			border-radius: _size(border-radius);
 
 			.section-image {
-				border-radius: _size(border-radius);
 				border: 0;		
 				img {
 					border-radius: _size(border-radius);
-					display: block;
 				}
 			}	
 		
-			&.intervenants {
-				background-color: lighten(_palette(accent6), 10%);
+			&.intervenants {	
+				background-color: rgba(_palette(accent6), 0.3);			
 				.section-image {
-					height:500px;
-					order: 1;
-					align-self: center;
+					align-self:stretch;
+					
+					border-radius: _size(border-radius);
+					order: 1;					
 					margin-left: $gutter;
+					padding:0.3em;
+					width: 50%;
+					@include vendor('display', 'flex');
+	    			@include vendor('flex-wrap', 'no-wrap');
+					@include vendor('flex-direction', 'row');
 					img {
-						height: 100%;
+						align-self: center;
+						max-height: 500px;
+						width: 100%;
+					}
+				}
+
+				@include breakpoint(small) {
+					@include vendor('flex-wrap', 'wrap');
+					.section-image {
+						margin: 0 auto;
 					}
 				}
 			}
@@ -88,6 +101,33 @@
 				 
 			}
 
+			&.valeurs {
+				position: relative;
+				> .text {
+					margin-right: 40%;	
+					
+				}
+				.section-image {
+					position: absolute;
+					top: 20%;
+					right: -10%;
+					max-width: 50%;
+					img {
+						width: 100%;
+						align-self: center;
+					}
+				}
+				@include breakpoint(medium) {
+					> .text {
+						margin-right: 0;	
+						
+					}
+					.section-image {
+						display:none;
+					}
+				}
+			}
+
 			&.pourqui {
 				background: linear-gradient(
 					rgba(255, 255, 255, 0.4), 
@@ -105,6 +145,17 @@
 						
 						h2{
 							text-align:center;
+						}
+					}
+
+					@include breakpoint(medium) {
+
+					background-repeat: no-repeat;
+					background-position:center top;
+					background-size: cover;
+						> .text {
+							margin-left: 0;	
+							
 						}
 					}
 				}

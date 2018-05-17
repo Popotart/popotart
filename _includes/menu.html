@@ -1,6 +1,7 @@
 <ul>
     {% assign pages = site.pages | sort: "order"  %}
     {% for my_page in pages %}
+    {% unless my_page.exclude %}
         {% if my_page.title %}
         <li>
             <a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a>
@@ -11,7 +12,7 @@
             {% case inner-content %}
             {% when 'interventions' %}
                 <ul>
-                    <li><a href="index.html#interventions" title="nos interventions">Nos interventions</a></li>
+                    <li><a href="/index.html#animations" title="nos ateliers et animations">Nos ateliers et animations</a></li>
                 </ul>
             {% when 'sections' %}
                 <ul>
@@ -25,5 +26,6 @@
             {% endcase %}
         {% endif %}
         </li>
+        {% endunless %}
     {% endfor %}
 </ul>

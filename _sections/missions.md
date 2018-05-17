@@ -4,9 +4,6 @@ order: 1
 name: "missions"
 permalink: /apropos.html#missions
 
-
-imagename: "/assets/images/pic13.jpg"
-alt-image: "image description generic b"
 ---
 
 *Popot'art* exploite **la littérature jeunesse, les contes et des ateliers

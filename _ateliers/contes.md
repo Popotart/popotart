@@ -15,14 +15,13 @@ images:
     title: Enfants écoutant la conteuse et regardant le livre
   - image_path: /assets/images/galeries/contesTirette.jpg
     title: Livre à tirette
-  - image_path: /assets/images/galeries/contesConteuse2.jpg
-    title: Enfants écoutant la conteuse et regardant le livre
   - image_path: /assets/images/galeries/contesOmbres.jpg
     title: Illustration en ombre chinoise
+  - image_path: /assets/images/galeries/contesConteuse.jpg
+    title: Enfants écoutant la conteuse et regardant le livre  
   - image_path: /assets/images/galeries/contesBruitages.jpg
     title: boite à meuh et autres objets de bruitage  
-  - image_path: /assets/images/galeries/contesConteuse.jpg
-    title: Enfants écoutant la conteuse et regardant le livre    
+  
 
 # EXEMPLES
 categorieExemples: animations
@@ -42,7 +41,7 @@ exemples:
 Racontées sur base d'un album ou selon la tradition orale des contes, leur **intérêt pédagogique** est multiple : stimulation du langage, de la concentration, de la compréhension orale, de l'imaginaire, éveil au langage artistique visuel, à la poésie, verbalisation des expériences, etc.
 
 Tel un voyage, *Popot'art* invite aussi à plonger ensemble dans un **nouvel univers** et à
-partager cette expérience avec l'autre – le pair, le parent ou le professionnel - et à créer ou renforcer ainsi le lien. UN moment commun de **plaisir**, de partage et d'éveil.
+partager cette expérience avec l'autre – le pair, le parent ou le professionnel - et à créer ou renforcer ainsi le lien. Un moment commun de **plaisir**, de partage et d'éveil.
 Les histoires peuvent également relever d'une thématique particulière en fonction de l'objectif de l'animation, des demandes de l'institution ou des participants.
 
 

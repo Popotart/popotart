@@ -15,19 +15,23 @@ permalink: /contact.html
         {% include contact_info.html %}
         <p> <br>
         Vous pouvez nous laisser un message ici:</p>
-        <form method="post" action="#">
+        <form name="contact" action="/merci.html" netlify-honeypot="autrechose" netlify>
                 <div class="field">
                     <label for="name">Votre nom</label>
-                  <input type="text" name="name" id="name" />
+                  <input type="text" name="name" id="name" required />
                 </div>
                 <div class="field">
                         <label for="email">Votre email</label>
-                  <input type="email" name="email" id="email"  />
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div class="field">
                         <label for="message">Votre message</label>
-                  <textarea name="message" id="message" ></textarea>
+                  <textarea name="message" id="message" required ></textarea>
                 </div>
+                <div style="display:none;">
+                    <label for="email">Votre autre chose</label>
+              <input type="text" name="autrechose" id="autrechose" />
+            </div>
                 <ul class="actions">
                   <li><input type="submit" value="Envoyer" class="special" /></li>
                 </ul>
