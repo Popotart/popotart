@@ -34,4 +34,4 @@ kramdown:
 exclude: ["README.md", "LICENSE.md", "screenshot.png", "non utilises"]
 
 # Google maps
-google_maps_javascript_api_key: " AIzaSyAVfCwuggjAGCu88yXZxjYdL4-sPybc6Y4 "
+google_maps_javascript_api_key: "AIzaSyC0P3hBe-WR5r_e0CYu1d2tXx30RwLR59M"
