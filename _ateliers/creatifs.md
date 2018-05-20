@@ -7,7 +7,7 @@ order: 2
 class:       "style2"                         # config bg-color to post list card (1..6)
 list-image:  "/assets/images/ateliers.jpeg"       # config image to post list card (1..6)
 description:                               # config description to post list card
-  pour bébés, enfants et adultes
+  pour bébés, enfants, ados et adultes
 
 # GALERIE
 images:

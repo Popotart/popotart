@@ -7,7 +7,7 @@ order: 4
 class:       "style2"                         # config bg-color to post list card (1..6)
 list-image:  "/assets/images/recreations2.jpeg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
-  Espaces créatifs de parole <br> pour enfants et adultes
+  Espaces créatifs de parole <br> pour enfants, ados et adultes
 
 # GALERIE
 images:

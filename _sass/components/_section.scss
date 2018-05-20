@@ -29,7 +29,7 @@
 		&.content-section {
 			$gutter: _size(gutter);
 			@include vendor('display', 'flex');
-	    	@include vendor('flex-wrap', 'no-wrap');
+	    	@include vendor('flex-wrap', 'nowrap');
 			@include vendor('flex-direction', 'row');
 			margin-top: _size(element-margin) * 2;
 			padding : 1rem;
@@ -53,7 +53,7 @@
 					padding:0.3em;
 					width: 50%;
 					@include vendor('display', 'flex');
-	    			@include vendor('flex-wrap', 'no-wrap');
+	    			@include vendor('flex-wrap', 'nowrap');
 					@include vendor('flex-direction', 'row');
 					img {
 						align-self: center;
