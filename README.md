@@ -11,7 +11,7 @@ The content of this site is protected by copyright. Do not use the images, logo 
 * **Phantom by [HTML5 UP](http://html5up.net/) | @n33co**
 
 * **Icons:**
-  * Font Awesome (fortawesome.github.com/Font-Awesome)
+  * Fontello (http://fontello.com/) subset of Font Awesome (fortawesome.github.com/Font-Awesome)
 
 * **Other:**
   * jQuery (jquery.com)
