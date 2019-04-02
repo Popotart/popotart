@@ -1,4 +1,4 @@
-Web site of Popot'art.
+Web site of Popot'art (https://www.popotart.be/).
 The content of this site is protected by copyright. Do not use the images, logo or texts without asking us.
 
 
