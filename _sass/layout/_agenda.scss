@@ -1,0 +1,43 @@
+.agendaEvent{
+    $gutter: _size(gutter);
+    @include vendor('display', 'flex');
+	@include vendor('flex-wrap', 'nowrap');
+    @include vendor('flex-direction', 'row');
+
+    .date{
+        @include vendor('flex', '0 0 auto');
+        margin-right: $gutter;   
+
+        >p{
+        color: darken( _palette(accent2), 10%);
+        font-weight: _font(weight-bold);
+
+        }
+            
+    }
+
+    .eventText {
+            >h3 {
+                color:  _palette(accent5);
+                margin:0;
+            }
+            >p{
+                margin: 0;
+            }
+            .lieu{
+                color:lighten( _palette(accent4), 3%);
+            }
+    }
+
+    
+
+    @include breakpoint(medium) {
+            @include vendor('flex-wrap', 'wrap');
+        
+
+    }
+}
+
+.agendaEvent +hr{
+    margin: 1em 0;
+}

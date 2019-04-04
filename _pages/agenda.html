@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Agenda"
+permalink: /agenda.html
+order: 2
+description: >
+  Agenda des événements passés et à venir
+  
+--- 
+
+<h1>Agenda</h1>
+<p>Voici la liste de nos dernières interventions (passées et à venir). <a href="/contact.html" target="_blank">N'hésitez pas à nous contacter</a> si vous souhaitez en organiser une dans votre institution ou pour participer à une activité à venir.</p>
+
+{% assign eventsByYear = site.events | group_by_exp:"event", "event.date | date: '%Y'" | reverse %}
+{% for eventsYear in eventsByYear %}
+  <h2>{{ eventsYear.name }}</h2>
+  {% assign events = eventsYear.items | sort: 'date' | reverse %}
+  {% for event in events %}
+      <div class="agendaEvent">
+        <div class="date">
+          <p>{{ event.date | date: "%d / %m"  }}</p>
+        </div>
+        <div class="eventText">
+          <h3>{{ event.title }}</h3>
+          <p>{% if event.description %}{{ event.description }} <br> {% endif %}
+            {% if event.lieu %} <span class="lieu">{{ event.lieu }} </span>{% endif %}
+          </p>
+        </div>
+      </div>
+      <hr>
+  {% endfor %}
+{% endfor %}
+
+
+  
+ 
+
+

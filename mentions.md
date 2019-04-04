@@ -19,7 +19,7 @@ Les textes, images, logos et éventuelles vidéos de ce site Web sont la propri�
 Le design de ce site est basé sur le thème Phantom créé par [HTML5 UP](http://html5up.net){:target="_blank"}
 
 ### Gestion des données personnelles ###
-Popot'art ne collecte des informations personnelles relatives à l’utilisateur que via le formulaire de contact. L’utilisateur fournit ces informations en toute connaissance de cause, procèdant par lui-même à leur saisie. Ces données sont utilisées uniquement pour répondre à la demande de l'utilisateur.
+Popot'art ne collecte des informations personnelles relatives à l’utilisateur que via le formulaire de contact. L’utilisateur fournit ces informations en toute connaissance de cause, procédant par lui-même à leur saisie. Ces données sont utilisées uniquement pour répondre à la demande de l'utilisateur.
 
 Tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, en précisant l’adresse à laquelle la réponse doit être envoyée.
 

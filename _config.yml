@@ -21,6 +21,7 @@ collections:
   ateliers:
     output: true 
   sections:  
+  events:
     
 sass:
   sass_dir: _sass
